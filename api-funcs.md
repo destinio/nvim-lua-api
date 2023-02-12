@@ -1,172 +1,182 @@
 The following is an easy to read list of https://neovim.io/doc/user/api.html#api-global
 
-buf_add_highlight
-buf_attach
-buf_call
-buf_clear_highlight
-buf_clear_namespace
-buf_create_user_command
-buf_del_extmark
-buf_del_keymap
-buf_del_mark
-buf_del_user_command
-buf_del_var
-buf_delete
-buf_get_changedtick
-buf_get_commands
-buf_get_extmark_by_id
-buf_get_extmarks
-buf_get_keymap
-buf_get_lines
-buf_get_mark
-buf_get_name
-buf_get_number
-buf_get_offset
-buf_get_option
-buf_get_text
-buf_get_var
-buf_is_loaded
-buf_is_valid
-buf_line_count
-buf_set_extmark
-buf_set_keymap
-buf_set_lines
-buf_set_mark
-buf_set_name
-buf_set_option
-buf_set_text
-buf_set_var
-buf_set_virtual_text
-call_dict_function
-call_function
-chan_send
-clear_autocmds
-cmd
-command
-command_output
-create_augroup
-create_autocmd
-create_buf
-create_namespace
-create_user_command
-del_augroup_by_id
-del_augroup_by_name
-del_autocmd
-del_current_line
-del_keymap
-del_mark
-del_user_command
-del_var
-echo
-err_write
-err_writeln
-eval
-eval_statusline
-exec
-exec_autocmds
-feedkeys
-get_all_options_info
-get_autocmds
-get_chan_info
-get_color_by_name
-get_color_map
-get_commands
-get_context
-get_current_buf
-get_current_line
-get_current_tabpage
-get_current_win
-get_hl_by_id
-get_hl_by_name
-get_hl_id_by_name
-get_keymap
-get_mark
-get_mode
-get_namespaces
-get_option
-get_option_info
-get_option_value
-get_proc
-get_proc_children
-get_runtime_file
-get_var
-get_vvar
-input
-input_mouse
-list_bufs
-list_chans
-list_runtime_paths
-list_tabpages
-list_uis
-list_wins
-load_context
-notify
-open_term
-open_win
-out_write
-parse_cmd
-parse_expression
-paste
-put
-replace_termcodes
-select_popupmenu_item
-set_current_buf
-set_current_dir
-set_current_line
-set_current_tabpage
-set_current_win
-set_decoration_provider
-set_hl
-set_hl_ns
-set_hl_ns_fast
-set_keymap
-set_option
-set_option_value
-set_var
-set_vvar
-strwidth
-tabpage_del_var
-tabpage_get_number
-tabpage_get_var
-tabpage_get_win
-tabpage_is_valid
-tabpage_list_wins
-tabpage_set_var
-win_call
-win_close
-win_del_var
-win_get_buf
-win_get_config
-win_get_cursor
-win_get_height
-win_get_number
-win_get_option
-win_get_position
-win_get_tabpage
-win_get_var
-win_get_width
-win_hide
-win_is_valid
-win_set_buf
-win_set_config
-win_set_cursor
-win_set_height
-win_set_hl_ns
-win_set_option
-win_set_var
-win_set_width
+## Buffers
+### buf_add_highlight
+### buf_attach
+### buf_call
+### buf_clear_highlight
+### buf_clear_namespace
+### buf_create_user_command
+### buf_del_extmark
+### buf_del_keymap
+### buf_del_mark
+### buf_del_user_command
+### buf_del_var
+### buf_delete
+### buf_get_changedtick
+### buf_get_commands
+### buf_get_extmark_by_id
+### buf_get_extmarks
+### buf_get_keymap
+### buf_get_lines
+### buf_get_mark
+### buf_get_name
+### buf_get_number
+### buf_get_offset
+### buf_get_option
+### buf_get_text
+### buf_get_var
+### buf_is_loaded
+### buf_is_valid
+### buf_line_count
+### buf_set_extmark
+### buf_set_keymap
+### buf_set_lines
+### buf_set_mark
+### buf_set_name
+### buf_set_option
+### buf_set_text
+### buf_set_var
 
-_buf_redraw_range
-_buf_stats
-_get_hl_defs
-_get_lib_dir
-_get_runtime
-_id
-_id_array
-_id_dictionary
-_id_float
-_inspect_cell
-_runtime_inspect
-_screenshot
-_stats
-_unpack
+## Other
+
+### buf_set_virtual_text
+### call_dict_function
+### call_function
+### chan_send
+### clear_autocmds
+### cmd
+### command
+### command_output
+
+## Create
+### create_augroup
+### create_autocmd
+### create_buf
+### create_namespace
+### create_user_command
+
+## Delete
+### del_augroup_by_id
+### del_augroup_by_name
+### del_autocmd
+### del_current_line
+### del_keymap
+### del_mark
+### del_user_command
+### del_var
+
+## To Org
+### echo
+### err_write
+### err_writeln
+### eval
+### eval_statusline
+### exec
+### exec_autocmds
+### feedkeys
+### get_all_options_info
+### get_autocmds
+### get_chan_info
+### get_color_by_name
+### get_color_map
+### get_commands
+### get_context
+### get_current_buf
+### get_current_line
+### get_current_tabpage
+### get_current_win
+### get_hl_by_id
+### get_hl_by_name
+### get_hl_id_by_name
+### get_keymap
+### get_mark
+### get_mode
+### get_namespaces
+### get_option
+### get_option_info
+### get_option_value
+### get_proc
+### get_proc_children
+### get_runtime_file
+### get_var
+### get_vvar
+### input
+### input_mouse
+### list_bufs
+### list_chans
+### list_runtime_paths
+### list_tabpages
+### list_uis
+### list_wins
+### load_context
+### notify
+### open_term
+### open_win
+### out_write
+### parse_cmd
+### parse_expression
+### paste
+### put
+### replace_termcodes
+### select_popupmenu_item
+### set_current_buf
+### set_current_dir
+### set_current_line
+### set_current_tabpage
+### set_current_win
+### set_decoration_provider
+### set_hl
+### set_hl_ns
+### set_hl_ns_fast
+### set_keymap
+### set_option
+### set_option_value
+### set_var
+### set_vvar
+### strwidth
+### tabpage_del_var
+### tabpage_get_number
+### tabpage_get_var
+### tabpage_get_win
+### tabpage_is_valid
+### tabpage_list_wins
+### tabpage_set_var
+### win_call
+### win_close
+### win_del_var
+### win_get_buf
+### win_get_config
+### win_get_cursor
+### win_get_height
+### win_get_number
+### win_get_option
+### win_get_position
+### win_get_tabpage
+### win_get_var
+### win_get_width
+### win_hide
+### win_is_valid
+### win_set_buf
+### win_set_config
+### win_set_cursor
+### win_set_height
+### win_set_hl_ns
+### win_set_option
+### win_set_var
+### win_set_width
+### 
+### _buf_redraw_range
+### _buf_stats
+### _get_hl_defs
+### _get_lib_dir
+### _get_runtime
+### _id
+### _id_array
+### _id_dictionary
+### _id_float
+### _inspect_cell
+### _runtime_inspect
+### _screenshot
+### _stats
+### _unpack
