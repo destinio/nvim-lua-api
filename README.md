@@ -1,5 +1,7 @@
 # Doing Things in NVIM Lua API
 
+[API Func List](./api-funcs.md)
+
 https://gist.github.com/destinio/a43567888c94aef35249047095b20c3a
 
 ## Run Things
